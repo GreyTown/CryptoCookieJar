@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Cookie Jar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cookie-jar-container">
+        <h1>🍪 Crypto Cookie Jar 🍪</h1>
+        
+        <div class="jar-display" id="jarDisplay">
+            <img src="cookie-jar.png" alt="Cookie Jar" id="cookieJarImage">
+            <div class="jar-info" id="jarInfo">
+                <p>No cookies in the jar yet!</p>
+            </div>
+        </div>
+        
+        <div class="action-panel" id="actionPanel">
+            <div class="deposit-section">
+                <h3>Deposit Cookies</h3>
+                <input type="number" id="ethAmount" placeholder="ETH amount" step="0.01" min="0.01">
+                <label for="lockTime">Lock time (days):</label>
+                <input type="number" id="lockTime" min="1" max="30" value="7">
+                <button id="depositBtn">Deposit Cookies</button>
+            </div>
+            
+            <div class="withdraw-section">
+                <h3>Withdraw Cookies</h3>
+                <button id="withdrawBtn">Withdraw Cookies</button>
+                <p id="withdrawMessage"></p>
+            </div>
+        </div>
+        
+        <div class="wallet-info">
+            <p id="walletAddress">Not connected</p>
+            <button id="connectWalletBtn">Connect Wallet</button>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

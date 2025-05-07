@@ -1,0 +1,88 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #FFF5E1;
+    color: #5E2C04;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cookie-jar-container {
+    max-width: 600px;
+    background-color: #FFE8C8;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 5px solid #DEB887;
+}
+
+h1 {
+    color: #8B4513;
+    margin-bottom: 30px;
+}
+
+.jar-display {
+    position: relative;
+    margin: 20px 0;
+}
+
+.jar-display img {
+    width: 200px;
+    height: auto;
+}
+
+.jar-info {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.action-panel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.deposit-section, .withdraw-section {
+    flex: 1;
+    padding: 15px;
+    background-color: #FFD699;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #8B4513;
+}
+
+button {
+    background-color: #D2B48C;
+    color: #5E2C04;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #8B4513;
+    color: white;
+}
+
+.wallet-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FFD699;
+    border-radius: 10px;
+}
+
+#withdrawMessage {
+    min-height: 20px;
+    color: #8B0000;
+    font-weight: bold;
+}
