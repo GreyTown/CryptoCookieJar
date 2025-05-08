@@ -2,8 +2,8 @@ let web3;
 let contract;
 let accounts;
 
-const contractAddress = "YOUR_DEPLOYED_CONTRACT_ADDRESS";
-const contractABI = [/* Paste your contract ABI here */];
+const contractAddress = "PASTE_DEPLOYED_CONTRACT_ADDRESS"; // From Remix
+const contractABI = [PASTE_ABI_HERE]; // From Remix
 
 document.addEventListener('DOMContentLoaded', () => {
     const connectWalletBtn = document.getElementById('connectWalletBtn');
